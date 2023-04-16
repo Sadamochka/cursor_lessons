@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(88, 88, 88);
+}
+.section_one {
+  height: 200px;
+  width: 200px;
+  background: url(img/Kosmos.webp);
+  background-position: center;
+  background-size: 150%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.sword_one {
+  width: 170px;
+  height: 5px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 5px #17f403, 0 0 25px #17f403, 0 0 50px #17f403,
+    0 0 200px #17f403;
+  margin-bottom: 30px;
+  animation-name: sword_one;
+  animation-duration: 3s;
+}
+.two_and_three {
+  transform-origin: left;
+}
+.sword_two {
+  width: 170px;
+  height: 5px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  margin-bottom: 30px;
+  animation-name: sword_two;
+  animation-duration: 3s;
+}
+.sword_three {
+  width: 170px;
+  height: 5px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 5px #f40353, 0 0 25px #f40353, 0 0 50px #f40353,
+    0 0 200px #f40353;
+  animation-name: sword_three;
+  animation-duration: 3s;
+}
+@keyframes sword_two {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+    margin-bottom: -10px;
+  }
+}
+@keyframes sword_three {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg);
+    margin-bottom: 30px;
+  }
+}
+@keyframes sword_one {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.balls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.ball_one {
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  animation-name: ball_one;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.ball_two {
+  display: block;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255));
+
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.ball_three {
+  display: block;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.ball_four {
+  display: block;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.ball_five {
+  display: block;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(5, 5, 5));
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.ball_six {
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  animation-name: ball_six;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes ball_one {
+  from {
+  }
+  25% {
+    margin-right: 16px;
+    margin-top: -10px; }
+    50% {
+      margin-right: 0px;
+      margin: 0px;
+    }
+ 
+}
+@keyframes ball_six {
+  from {
+  }
+  50% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  75% {
+    margin-left: 16px;
+    margin-top: -10px;
+}
+}
