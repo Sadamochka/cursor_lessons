@@ -15,7 +15,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-}
+ }
 .sword_one {
   width: 170px;
   height: 5px;
@@ -24,8 +24,7 @@ body {
     0 0 200px #17f403;
   margin-bottom: 30px;
   animation-name: sword_one;
-  animation-duration: 3s;
-}
+  animation-duration: 3s;}
 .two_and_three {
   transform-origin: left;
 }
